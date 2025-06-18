@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true
+  },
+  "lint": {
+    "include": ["src/"],
+    "rules": {
+      "tags": ["recommended"],
+      "include": [],
+      "exclude": []
+    }
+  },
+  "fmt": {
+    "include": ["src/"],
+    "exclude": [],
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": false,
+    "proseWrap": "preserve"
+  },
+  "test": {
+    "include": ["src/**/*_test.ts"]
+  },
+  "tasks": {
+    "dev": "deno run --allow-read --allow-write --allow-run --allow-env src/cli.ts",
+    "test": "deno test --allow-read --allow-write --allow-run --allow-env",
+    "lint": "deno lint",
+    "fmt": "deno fmt",
+    "check": "deno check src/**/*.ts",
+    "compile": "deno compile --allow-read --allow-write --allow-run --allow-env --output=wezterminator src/cli.ts",
+    "compile:mac": "deno compile --target aarch64-apple-darwin --allow-read --allow-write --allow-run --allow-env --output=wezterminator-mac src/cli.ts",
+    "compile:mac-intel": "deno compile --target x86_64-apple-darwin --allow-read --allow-write --allow-run --allow-env --output=wezterminator-mac-intel src/cli.ts",
+    "compile:linux": "deno compile --target x86_64-unknown-linux-gnu --allow-read --allow-write --allow-run --allow-env --output=wezterminator-linux src/cli.ts",
+    "compile:windows": "deno compile --target x86_64-pc-windows-msvc --allow-read --allow-write --allow-run --allow-env --output=wezterminator-windows.exe src/cli.ts",
+    "compile:all": "deno task compile:mac && deno task compile:mac-intel && deno task compile:linux && deno task compile:windows"
+  }
+}

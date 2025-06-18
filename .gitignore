@@ -1,0 +1,4 @@
+# Deno compiled binaries
+wezterminator
+wezterminator-*
+*.exe
