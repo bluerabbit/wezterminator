@@ -1,4 +1,7 @@
 {
+  "name": "@bluerabbit/wezterminator",
+  "version": "0.0.1",
+  "exports": "./src/cli.ts",
   "compilerOptions": {
     "strict": true,
     "noImplicitAny": true,
@@ -27,6 +30,10 @@
   },
   "test": {
     "include": ["src/**/*_test.ts"]
+  },
+  "publish": {
+    "include": ["src/**/*.ts", "README.md", "LICENSE"],
+    "exclude": ["src/**/*_test.ts"]
   },
   "tasks": {
     "dev": "deno run --allow-read --allow-write --allow-run --allow-env src/cli.ts",

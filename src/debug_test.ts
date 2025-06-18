@@ -1,4 +1,4 @@
-import { assertEquals } from "jsr:@std/assert";
+import { assertEquals } from "jsr:@std/assert@^1.0.13";
 import { Debug } from "./debug.ts";
 
 Deno.test("Debug.isEnabled() returns false by default", () => {

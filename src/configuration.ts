@@ -1,5 +1,5 @@
-import * as yaml from "jsr:@std/yaml";
-import * as path from "jsr:@std/path";
+import * as yaml from "jsr:@std/yaml@^1.0.8";
+import * as path from "jsr:@std/path@^1.1.0";
 
 export class ConfigError extends Error {
   constructor(message: string) {
