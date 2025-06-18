@@ -10,6 +10,18 @@ WezTerm workspace management tool written in TypeScript for Deno.
 
 ## Installation
 
+### Install from JSR (Recommended)
+
+```bash
+# Global installation (recommended)
+deno install --global --allow-read --allow-write --allow-run --allow-env jsr:@bluerabbit/wezterminator
+
+# Now you can use wezterminator from anywhere
+wezterminator new myproject
+```
+
+### Install from Source
+
 ```bash
 # Clone the repository
 git clone https://github.com/bluerabbit/wezterminator.git
