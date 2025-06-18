@@ -1,7 +1,7 @@
 #!/usr/bin/env -S deno run --allow-read --allow-write --allow-run --allow-env
 
-import * as path from "jsr:@std/path";
-import { ensureDir } from "jsr:@std/fs";
+import * as path from "jsr:@std/path@^1.1.0";
+import { ensureDir } from "jsr:@std/fs@^1.0.18";
 import { Debug } from "./debug.ts";
 import { ConfigError, Configuration, WorkspaceContent, YamlConfig } from "./configuration.ts";
 import { WeztermCLI } from "./wezterm_cli.ts";

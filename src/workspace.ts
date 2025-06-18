@@ -1,4 +1,4 @@
-import * as path from "jsr:@std/path";
+import * as path from "jsr:@std/path@^1.1.0";
 import { WeztermCLI } from "./wezterm_cli.ts";
 import { PaneManager } from "./pane_manager.ts";
 import { Debug } from "./debug.ts";
